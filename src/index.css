@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #050505;
+    --bg-surface: #111111;
+    --bg-elevated: #1A1A1A;
+    --bg-inset: #0D0D0D;
+    --border-subtle: #262626;
+    --border-strong: #333333;
+    --focus-ring: #6366f1;
+    --text-primary: #EDEDED;
+    --text-secondary: #A3A3A3;
+    --text-muted: #737373;
+    --text-inverse: #050505;
+    --accent: #6366f1;
+    --accent-hover: #4f46e5;
+    
+    /* Assurance Ladder */
+    --state-unknown: #737373;
+    --state-claimed: #f59e0b;
+    --state-documented: #6366f1;
+    --state-corroborated: #818cf8;
+    --state-substantiated: #10b981;
+    --state-executing: #10b981;
+    --state-delivered: #059669;
+    --state-accepted: #14b8a6;
+    --state-operational: #06b6d4;
+
+    /* Condition Flags */
+    --flag-stale: #f59e0b;
+    --flag-contradictory: #ef4444;
+    --flag-expired: #dc2626;
+    --flag-disputed: #a855f7;
+    --flag-superseded: #737373;
+  }
+
+  body {
+    background-color: #050505;
+    color: #EDEDED;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-feature-settings: "tnum" 1, "zero" 1;
+  }
+
+  .font-serif {
+    font-family: 'Newsreader', Georgia, Cambria, serif;
+  }
+}
+
+/* Bento card helpers */
+.bento-card {
+  background-color: #111111;
+  border: 1px solid #262626;
+  border-radius: 1.5rem; /* rounded-3xl */
+}
+
+.bento-item {
+  background-color: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem; /* rounded-2xl */
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* High density utilities */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+

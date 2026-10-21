@@ -1,0 +1,6 @@
+{
+  "name": "Assure",
+  "description": "Enterprise commitment assurance platform that turns critical physical infrastructure promises into continuously auditable evidence states for capital decision-makers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
